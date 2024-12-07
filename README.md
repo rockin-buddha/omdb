@@ -23,7 +23,7 @@ Requirements
 
 You can install the required dependencies using the following command:
 
-pip install requests
+    pip install requests
 
 Setup
 
@@ -64,23 +64,23 @@ Here’s how the script interacts with the user:
 
 Example search:
 
-Enter Title of Movie/ Series/ Episode : Inception
-Movie name : Inception
-Type : movie
-Ratings : 8.8/10
-IMDb Rating : 8.8
-IMDb Votes : 2000000
-Release Date : 16 Jul 2010
-Content Type : PG-13
-Awards : 4 wins & 148 nominations
-Plot : A thief who steals corporate secrets through the use of dream-sharing technology...
-Actors : Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page
-Runtime : 148 min
-Genre : Action, Adventure, Sci-Fi
-Director : Christopher Nolan
-Writer : Christopher Nolan
-Language : English, Japanese, French
-Country : USA, UK
+    Enter Title of Movie/ Series/ Episode : Inception
+    Movie name : Inception
+    Type : movie
+    Ratings : 8.8/10
+    IMDb Rating : 8.8
+    IMDb Votes : 2000000
+    Release Date : 16 Jul 2010
+    Content Type : PG-13
+    Awards : 4 wins & 148 nominations
+    Plot : A thief who steals corporate secrets through the use of dream-sharing technology...
+    Actors : Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page
+    Runtime : 148 min
+    Genre : Action, Adventure, Sci-Fi
+    Director : Christopher Nolan
+    Writer : Christopher Nolan
+    Language : English, Japanese, French
+    Country : USA, UK
 
 Functions
 
@@ -93,26 +93,26 @@ Functions
 
 Example Run
 
-Enter your Open Movie Data Base (OMDb) API KEY : <Your API Key>
-How do you want to search Movie/Series : [1:Title (Default), 2:IMDb ID] : 1
-Enter Title of Movie/ Series/ Episode : Inception
-Movie name : Inception
-Type : movie
-Ratings : 8.8/10
-IMDb Rating : 8.8
-IMDb Votes : 2000000
-Release Date : 16 Jul 2010
-Content Type : PG-13
-Awards : 4 wins & 148 nominations
-Plot : A thief who steals corporate secrets through the use of dream-sharing technology...
-Actors : Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page
-Runtime : 148 min
-Genre : Action, Adventure, Sci-Fi
-Director : Christopher Nolan
-Writer : Christopher Nolan
-Language : English, Japanese, French
-Country : USA, UK
-Wanna search more [y/N] : y
+    Enter your Open Movie Data Base (OMDb) API KEY : <Your API Key>
+    How do you want to search Movie/Series : [1:Title (Default), 2:IMDb ID] : 1
+    Enter Title of Movie/ Series/ Episode : Inception
+    Movie name : Inception
+    Type : movie
+    Ratings : 8.8/10
+    IMDb Rating : 8.8
+    IMDb Votes : 2000000
+    Release Date : 16 Jul 2010
+    Content Type : PG-13
+    Awards : 4 wins & 148 nominations
+    Plot : A thief who steals corporate secrets through the use of dream-sharing technology...
+    Actors : Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page
+    Runtime : 148 min
+    Genre : Action, Adventure, Sci-Fi
+    Director : Christopher Nolan
+    Writer : Christopher Nolan
+    Language : English, Japanese, French
+    Country : USA, UK
+    Wanna search more [y/N] : y
 
 Error Handling
 
