@@ -19,7 +19,6 @@ def title(key: bool, api: str) -> str:
         if respDict["Response"].lower() == "true":
             print(f"{respDict['Type'].capitalize()} name : {respDict['Title']}")
             print(f"Type : {respDict['Type']}")
-            #tt9813792
             print(f"Ratings : {respDict['Ratings'][0]['Value']}")
             print(f"IMDb Rating : {respDict['imdbRating']}")
             print(f"IMDb Votes : {respDict['imdbVotes']}")
