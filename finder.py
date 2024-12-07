@@ -8,7 +8,23 @@ Created on Fri Dec  6 23:22:02 2024
 import requests as req
 import json
 
-
+def result(respDict: dict):
+    print(f"{respDict['Type'].capitalize()} name : {respDict['Title']}")
+    print(f"Type : {respDict['Type']}")
+    print(f"Ratings : {respDict['Ratings'][0]['Value']}")
+    print(f"IMDb Rating : {respDict['imdbRating']}")
+    print(f"IMDb Votes : {respDict['imdbVotes']}")
+    print(f"Release Date : {respDict['Released']}")
+    print(f"Content Type : {respDict['Rated']}")
+    print(f"Awards : {respDict['Awards']}")
+    print(f"Plot : {respDict['Plot']}")
+    print(f"Actors : {respDict['Actors']}")
+    print(f"Runtime : {respDict['Runtime'] if respDict['Type'] == 'movie' else None}")
+    print(f"Genre : {respDict['Genre']}")
+    print(f"Director : {respDict['Director']}")
+    print(f"Writer : {respDict['Writer']}")
+    print(f"Language : {respDict['Language']}")
+    print(f"Country : {respDict['Country']}")
 def title(key: bool, api: str) -> str:
     if key:
         title = input("Enter Title of Movie/ Series/ Episode : ")
@@ -17,22 +33,7 @@ def title(key: bool, api: str) -> str:
         resp = req.get(fullReq)
         respDict = json.loads(resp.text)
         if respDict["Response"].lower() == "true":
-            print(f"{respDict['Type'].capitalize()} name : {respDict['Title']}")
-            print(f"Type : {respDict['Type']}")
-            print(f"Ratings : {respDict['Ratings'][0]['Value']}")
-            print(f"IMDb Rating : {respDict['imdbRating']}")
-            print(f"IMDb Votes : {respDict['imdbVotes']}")
-            print(f"Release Date : {respDict['Released']}")
-            print(f"Content Type : {respDict['Rated']}")
-            print(f"Awards : {respDict['Awards']}")
-            print(f"Plot : {respDict['Plot']}")
-            print(f"Actors : {respDict['Actors']}")
-            print(f"Runtime : {respDict['Runtime'] if respDict['Type'] == 'movie' else None}")
-            print(f"Genre : {respDict['Genre']}")
-            print(f"Director : {respDict['Director']}")
-            print(f"Writer : {respDict['Writer']}")
-            print(f"Language : {respDict['Language']}")
-            print(f"Country : {respDict['Country']}")
+            result(respDict)
         else:
             print("Sorry, requested Title doesn\'t exist")
             resumer()
@@ -46,23 +47,7 @@ def imdb(key: bool, api: str) -> str:
         resp = req.get(fullReq)
         respDict = json.loads(resp.text)
         if respDict["Response"].lower() == "true":
-            print(f"{respDict['Type'].capitalize()} name : {respDict['Title']}")
-            print(f"Type : {respDict['Type']}")
-            #tt9813792
-            print(f"Ratings : {respDict['Ratings'][0]['Value']}")
-            print(f"IMDb Rating : {respDict['imdbRating']}")
-            print(f"IMDb Votes : {respDict['imdbVotes']}")
-            print(f"Release Date : {respDict['Released']}")
-            print(f"Content Type : {respDict['Rated']}")
-            print(f"Awards : {respDict['Awards']}")
-            print(f"Plot : {respDict['Plot']}")
-            print(f"Actors : {respDict['Actors']}")
-            print(f"Runtime : {respDict['Runtime'] if respDict['Type'] == 'movie' else None}")
-            print(f"Genre : {respDict['Genre']}")
-            print(f"Director : {respDict['Director']}")
-            print(f"Writer : {respDict['Writer']}")
-            print(f"Language : {respDict['Language']}")
-            print(f"Country : {respDict['Country']}")
+            result(respDict)
         else:
             print("Sorry, requested IMDb ID doesn\'t exist")
             resumer()
